@@ -3,7 +3,22 @@ layout: default
 title: Home
 ---
 
-<p>Welcome to my blog!</p>
+<h1>Welcome</h1>
+
+<p>Welcome to my github blog! Currently, this is mostly to set an example for my fellow employees so we can all have awesome github blogs.</p>
+
+<h2>Latest Post</h2>
+
+{% for post in site.posts limit:1 %}
+
+<h3>{{ post.title }}</h3>
+
+<p>{{ post.content | truncatewords:50 }}</p>
+
+<p><a href="{{ post.url }}">Read More&hellip;</a></p>
+{% endfor %}
+
+<h2>All Posts</h2>
 
 <ul class="posts">
 	{% for post in site.posts %}

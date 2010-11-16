@@ -1,7 +1,0 @@
----
-layout: default
-title: Schematic Tech Summit
----
-
-Schematic Tech Summit
----------------------
